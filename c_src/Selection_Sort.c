@@ -5,10 +5,10 @@ int main()
 	int arr[10] = { 1,10,5,8,7,6,4,3,2,9 };
 	int tmp, max, index;
 
-	for (int i = 0; i < sizeof(arr) / sizeof(int); ++i)
+	for (int i = 0; i < 9; ++i)
 	{
 		max = 100;
-		for (int j = i; j < sizeof(arr) / sizeof(int); ++j)
+		for (int j = i; j < 9; ++j)
 		{
 			if (max > arr[j])
 			{
@@ -22,7 +22,7 @@ int main()
 		arr[index] = tmp;
 	}
 
-	for (int i = 0; i < sizeof(arr) / sizeof(int); ++i)
+	for (int i = 0; i < 9; ++i)
 	{
 		printf("%d ", arr[i]);
 	}
