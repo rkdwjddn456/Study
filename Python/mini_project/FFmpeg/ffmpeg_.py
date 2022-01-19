@@ -1,17 +1,6 @@
 import os
-# import subprocess
-
-
-# arr = ['ffmpeg', '-ss', '00:00:0', '-i', 'aa.mp4', '-r', '1', f'output_images/fgong_%5d.jpg']
-# proc = subprocess.Popen(arr, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-# out, err = proc.communicate()
-
-# video_path, image_path
-
-import os
 
 def ffmpeg_process(video_path, output_path):
-
 
     arr = os.listdir(video_path)
     empty = []
